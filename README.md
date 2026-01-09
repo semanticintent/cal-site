@@ -59,7 +59,7 @@ npm install
 npm run docs:dev
 ```
 
-Then open [http://localhost:5173](http://localhost:5173)
+Then open http://localhost:5173
 
 ### Build for Production
 

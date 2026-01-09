@@ -13,7 +13,7 @@ cd C:\workplace\cal-docs
 npm run docs:dev
 ```
 
-Then open your browser to: **http://localhost:5173**
+Then open your browser to: `http://localhost:5173`
 
 ---
 
