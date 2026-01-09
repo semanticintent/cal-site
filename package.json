@@ -1,0 +1,22 @@
+{
+  "name": "cal-docs",
+  "version": "1.0.0",
+  "description": "Documentation site for CAL (Cascade Analysis Language)",
+  "type": "module",
+  "scripts": {
+    "docs:dev": "vitepress dev",
+    "docs:build": "vitepress build",
+    "docs:preview": "vitepress preview"
+  },
+  "keywords": [
+    "cal",
+    "cascade-analysis",
+    "cormorant",
+    "documentation"
+  ],
+  "author": "Michael Shatny",
+  "license": "MIT",
+  "devDependencies": {
+    "vitepress": "^1.0.0"
+  }
+}
