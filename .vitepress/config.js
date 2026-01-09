@@ -4,6 +4,11 @@ export default defineConfig({
   title: 'CAL',
   description: 'Cascade Analysis Language - The closed-loop intelligence language for finding what companies miss',
 
+  ignoreDeadLinks: [
+    // Allow localhost URLs in developer documentation
+    /^https?:\/\/localhost/,
+  ],
+
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
     ['meta', { property: 'og:title', content: 'CAL - Cascade Analysis Language' }],
