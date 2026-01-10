@@ -1,170 +1,135 @@
+---
+layout: doc
+title: Playground
+aside: false
+---
+
+<script setup>
+import CALPlayground from './.vitepress/theme/components/CALPlayground.vue'
+</script>
+
+<style>
+/* Full-width playground */
+.vp-doc .container {
+  max-width: 100% !important;
+  padding: 0 !important;
+}
+
+.vp-doc .content {
+  max-width: 100% !important;
+  padding: 2rem 1rem !important;
+}
+</style>
+
 # CAL Playground
 
-::: warning Coming Soon
-The interactive CAL playground is under development. Check back soon!
-:::
+Try CAL syntax with pre-loaded examples. Write cascade analysis code on the left, see outputs on the right.
 
-## What is the Playground?
-
-The CAL Playground will be an interactive environment where you can:
-
-- **Write CAL scripts** in a browser-based editor
-- **Execute analysis** with sample or custom data
-- **See results** in real-time
-- **Visualize cascades** with interactive diagrams
-- **Share scripts** with a unique URL
-- **Export results** as JSON or reports
-
-## Features (Coming Soon)
-
-### Code Editor
-- Syntax highlighting for CAL
-- Auto-completion for keywords
-- Real-time syntax validation
-- Line numbers and error indicators
-
-### Live Execution
-- Run scripts instantly
-- See execution steps
-- View intermediate results
-- Debug with verbose mode
-
-### Sample Data
-- Pre-loaded examples
-- Real case studies (Tailwind, etc.)
-- Custom data upload
-- JSON/CSV support
-
-### Visualization
-- 6D cascade diagrams
-- DRIFT/Fetch charts
-- Timeline views
-- Impact heatmaps
-
-### Collaboration
-- Share scripts via URL
-- Export to GitHub Gist
-- Embed in documentation
-- Save to browser storage
-
-## Try CAL Now
-
-While the playground is being built, you can try CAL:
-
-### 1. Install Locally
-```bash
-git clone https://github.com/semanticintent/cal.git
-cd cal
-npm install
-node repl.js
-```
-
-### 2. Use the CLI
-```bash
-node run.js examples/tailwind-cascade.cal --data examples/sample-data.json
-```
-
-### 3. Try the REPL
-```bash
-node repl.js
-```
-
-## Example Scripts to Try
-
-### Basic Query
-```cal
-FORAGE entities
-WHERE sound > 7
-ACROSS D1, D2, D3
-DEPTH 2
-SURFACE results
-```
-
-### Full Analysis
-```cal
-FORAGE entities
-WHERE sound > 7 AND segment = "enterprise"
-ACROSS D1, D2, D3, D5, D6
-DEPTH 3
-SURFACE cascade_map
-
-DRIFT cascade_map
-METHODOLOGY 85
-PERFORMANCE 35
-
-FETCH cascade_map
-THRESHOLD 1000
-ON EXECUTE CHIRP critical "Act now"
-```
-
-### Tailwind Case Study
-```cal
--- Real UC-002 analysis
-FORAGE entities
-WHERE name = "Tailwind CSS Layoffs"
-ACROSS D1, D2, D3, D5, D6
-DEPTH 2
-SURFACE tailwind_cascade
-
-DRIFT tailwind_cascade
-METHODOLOGY 85
-PERFORMANCE 35
-
-FETCH tailwind_cascade
-THRESHOLD 1000
-ON EXECUTE CHIRP critical "Major restructure needed"
-```
-
-## Want to Contribute?
-
-Help us build the playground! The repo is open source:
-
-- [GitHub Repository](https://github.com/semanticintent/cal)
-- [Submit Issues](https://github.com/semanticintent/cal/issues)
-- [Join Discussions](https://github.com/semanticintent/cal/discussions)
-
-## Playground Architecture (Planned)
-
-```
-┌─────────────────────────────────────────┐
-│         CAL PLAYGROUND                  │
-├─────────────────────────────────────────┤
-│                                         │
-│  Editor (Monaco/CodeMirror)             │
-│    ├─ Syntax Highlighting               │
-│    ├─ Auto-complete                     │
-│    └─ Error Indicators                  │
-│                                         │
-│  Execution Engine (WASM)                │
-│    ├─ Parse CAL                         │
-│    ├─ Execute Plan                      │
-│    └─ Return Results                    │
-│                                         │
-│  Visualization Layer (D3/React)         │
-│    ├─ Cascade Diagrams                  │
-│    ├─ DRIFT Charts                      │
-│    └─ Fetch Indicators                  │
-│                                         │
-│  Data Manager                           │
-│    ├─ Sample Datasets                   │
-│    ├─ File Upload                       │
-│    └─ Local Storage                     │
-│                                         │
-└─────────────────────────────────────────┘
-```
-
-## Next Steps
-
-While you wait for the playground:
-
-- [Learn the Language](/language/syntax)
-- [Try Code Examples](/language/examples)
-- [Understand Frameworks](/frameworks/drift)
-- [Use the CLI](/tools/cli)
-- [Explore the REPL](/tools/repl)
+<CALPlayground />
 
 ---
 
-::: tip Stay Updated
-Follow [@StratIQX](https://twitter.com/stratiqx) for playground launch announcements!
-:::
+## About These Examples
+
+All examples demonstrate real CAL syntax patterns:
+
+- **FORAGE** - Entity discovery with filters and cascade mapping
+- **DRIFT** - Methodology vs Performance gap measurement
+- **FETCH** - Threshold-based decision making
+- **CHIRP** - Alert and notification triggers
+- **Full Pipelines** - Complete closed-loop workflows
+
+### What You're Seeing:
+
+1. **CAL Code** - Real language syntax with keywords, operators, and structure
+2. **Example Output** - Formatted results showing cascade impacts, DRIFT measurements, and FETCH decisions
+3. **Case Studies** - Real-world examples like the Tailwind CSS analysis from UC-002
+
+### Key Features Demonstrated:
+
+- 🪶 **Methodology-Native** - FORAGE, DRIFT, FETCH as keywords, not functions
+- 📊 **6D Cascade Mapping** - Multi-dimensional impact analysis (D1-D6)
+- 🎯 **DRIFT Measurement** - Quantify gaps between what you know and what you do
+- ⚡ **FETCH Decisions** - Automated threshold-based action triggers
+- 🔄 **Closed-Loop Intelligence** - Sense → Analyze → Measure → Decide → Act
+
+---
+
+## Live Execution Coming Soon
+
+This playground currently shows pre-determined outputs for each example. The full interactive version with real CAL execution is coming soon and will include:
+
+- ✅ Real-time CAL parsing and execution
+- ✅ Custom data input (JSON/CSV)
+- ✅ Interactive cascade visualizations
+- ✅ Editable code with syntax highlighting
+- ✅ Save and share scripts
+
+Want to try CAL with real execution now?
+
+👉 [Install CAL Locally](/guide/installation) - Once the repository is public
+
+---
+
+## Understanding the Syntax
+
+### Keywords
+
+- `FORAGE` - Discover entities and map cascades
+- `DRIFT` - Measure methodology vs performance gaps
+- `FETCH` - Make threshold-based decisions
+- `CHIRP` - Send alerts and notifications
+- `PERCH` - Persist results for later analysis
+- `DIVE` - Deep-dive into specific entities
+
+### Operators
+
+- `WHERE` - Filter conditions
+- `ACROSS` - Specify dimensions (D1, D2, D3, D5, D6)
+- `DEPTH` - How many cascade levels to analyze
+- `SURFACE` - Name the output
+- `THRESHOLD` - Decision point for FETCH
+- `ON EXECUTE` / `ON SKIP` - Conditional actions
+
+### Dimensions
+
+- **D1: Customer** - Customer experience impact
+- **D2: Employee** - Workforce and culture effects
+- **D3: Revenue** - Business growth and opportunities
+- **D5: Quality** - Standards and technical excellence
+- **D6: Operational** - Systems and process efficiency
+
+---
+
+## Want to Try More?
+
+Explore the full language reference:
+
+- **[Syntax Guide](/language/syntax)** - Complete CAL grammar
+- **[Keywords Reference](/language/keywords)** - All CAL keywords explained
+- **[Code Examples](/language/examples)** - More complex patterns
+- **[DRIFT Framework](/frameworks/drift)** - Methodology explained
+- **[Fetch Framework](/frameworks/fetch)** - Decision logic details
+
+---
+
+## Ready to Use CAL?
+
+While CAL is still in testing before public release:
+
+1. **[Read the Docs](/guide/introduction)** - Understand the methodology
+2. **[Learn the Language](/language/syntax)** - Study CAL syntax
+3. **[Review Case Studies](/language/examples)** - See real examples
+4. **[Watch for Release](https://github.com/semanticintent)** - GitHub coming soon
+
+---
+
+<div style="text-align: center; margin-top: 3rem; padding: 2rem; background: var(--vp-c-bg-soft); border-radius: 12px;">
+
+**The only language where cascade analysis is syntax, not a library.**
+
+*Find what companies miss.* 🪶
+
+[Get Started →](/guide/introduction)
+
+</div>
