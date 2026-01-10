@@ -9,15 +9,22 @@ import CALPlayground from './.vitepress/theme/components/CALPlayground.vue'
 </script>
 
 <style>
-/* Full-width playground */
-.vp-doc .container {
+/* Full-width playground - override VitePress constraints */
+.VPDoc.has-aside .container,
+.VPDoc .container {
   max-width: 100% !important;
   padding: 0 !important;
 }
 
-.vp-doc .content {
+.VPDoc.has-aside .content,
+.VPDoc .content {
   max-width: 100% !important;
-  padding: 2rem 1rem !important;
+  padding: 1rem !important;
+  margin: 0 !important;
+}
+
+.content-container {
+  max-width: 100% !important;
 }
 </style>
 
