@@ -1,0 +1,36 @@
+<svg width="540" height="300" viewBox="0 0 540 300" xmlns="http://www.w3.org/2000/svg">
+  <!-- Background (optional, can be removed for transparency) -->
+  <rect width="540" height="300" fill="#0d1117"/>
+
+  <!-- Feather -->
+  <path d="M 270 40 Q 265 50 260 65 Q 255 80 252 95 L 268 90 Q 262 75 258 60 Q 255 50 255 45 Z"
+        fill="#e8956f" opacity="0.9"/>
+  <path d="M 252 95 L 268 90 L 265 100 L 250 103 Z"
+        fill="#d08060" opacity="0.8"/>
+
+  <!-- .cal text -->
+  <g font-family="monospace, 'Courier New', Courier" font-weight="bold">
+    <!-- Dot -->
+    <circle cx="155" cy="215" r="14" fill="#4a9eff"/>
+
+    <!-- c -->
+    <path d="M 210 180 Q 190 180 180 195 Q 170 210 180 225 Q 190 240 210 240 L 210 220 Q 200 220 195 210 Q 195 205 195 200 Q 195 195 200 190 Q 205 180 210 180 Z"
+          fill="#4a9eff"/>
+
+    <!-- a -->
+    <path d="M 260 210 Q 250 180 280 180 Q 310 180 300 210 L 300 240 L 280 240 L 280 210 Q 285 200 280 195 Q 275 190 270 195 Q 265 200 270 210 L 270 240 L 260 240 Z"
+          fill="#4a9eff"/>
+
+    <!-- l -->
+    <rect x="330" y="160" width="20" height="80" rx="3" fill="#4a9eff"/>
+  </g>
+
+  <!-- CASCADE ANALYSIS LANGUAGE -->
+  <text x="270" y="268"
+        font-family="Arial, sans-serif"
+        font-size="14"
+        font-weight="600"
+        letter-spacing="4"
+        fill="#64ffda"
+        text-anchor="middle">CASCADE ANALYSIS LANGUAGE</text>
+</svg>
