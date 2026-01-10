@@ -5,6 +5,9 @@ hero:
   name: CAL
   text: Cascade Analysis Language
   tagline: The closed-loop intelligence language for finding what companies miss
+  image:
+    src: /logo.svg
+    alt: CAL - Cascade Analysis Language
   actions:
     - theme: brand
       text: Get Started
