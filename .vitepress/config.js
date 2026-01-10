@@ -11,7 +11,7 @@ export default defineConfig({
   ],
 
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', type: 'image/svg+xml', href: '/favicon.svg' }],
     ['meta', { name: 'title', content: 'CAL - Cascade Analysis Language' }],
     ['meta', { name: 'description', content: 'The only language where cascade analysis is syntax, not a library. Find what companies miss with closed-loop intelligence.' }],
     ['meta', { property: 'og:type', content: 'website' }],

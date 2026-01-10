@@ -69,31 +69,29 @@
  * Component Customizations
  */
 
-/* Hero logo styling with rounded borders */
+/* Hero logo styling - clean and prominent */
 .VPHero .image-src,
 .VPHero .VPImage {
-  border-radius: 16px;
-  padding: 2rem;
-  background: linear-gradient(135deg, rgba(74, 158, 255, 0.1) 0%, rgba(100, 255, 218, 0.1) 100%);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  border-radius: 20px;
+  box-shadow: 0 8px 32px rgba(74, 158, 255, 0.3);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  max-width: 320px;
 }
 
 .VPHero .image-src:hover,
 .VPHero .VPImage:hover {
-  transform: translateY(-4px);
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.15);
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 16px 48px rgba(74, 158, 255, 0.4);
 }
 
 .dark .VPHero .image-src,
 .dark .VPHero .VPImage {
-  background: linear-gradient(135deg, rgba(74, 158, 255, 0.15) 0%, rgba(100, 255, 218, 0.15) 100%);
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  box-shadow: 0 8px 32px rgba(74, 158, 255, 0.5);
 }
 
 .dark .VPHero .image-src:hover,
 .dark .VPHero .VPImage:hover {
-  box-shadow: 0 12px 48px rgba(0, 0, 0, 0.4);
+  box-shadow: 0 16px 48px rgba(74, 158, 255, 0.6);
 }
 
 /* Hero section - Gradient text */
