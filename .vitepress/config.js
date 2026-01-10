@@ -1,8 +1,9 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
-  title: 'CAL',
+  title: 'CAL - Cascade Analysis Language',
   description: 'Cascade Analysis Language - The closed-loop intelligence language for finding what companies miss',
+  titleTemplate: ':title | CAL Documentation',
 
   ignoreDeadLinks: [
     // Allow localhost URLs in developer documentation
@@ -11,8 +12,18 @@ export default defineConfig({
 
   head: [
     ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['meta', { name: 'title', content: 'CAL - Cascade Analysis Language' }],
+    ['meta', { name: 'description', content: 'The only language where cascade analysis is syntax, not a library. Find what companies miss with closed-loop intelligence.' }],
+    ['meta', { property: 'og:type', content: 'website' }],
+    ['meta', { property: 'og:url', content: 'https://cal.cormorantforaging.dev/' }],
     ['meta', { property: 'og:title', content: 'CAL - Cascade Analysis Language' }],
-    ['meta', { property: 'og:description', content: 'The only language where cascade analysis is syntax, not a library.' }],
+    ['meta', { property: 'og:description', content: 'The only language where cascade analysis is syntax, not a library. Find what companies miss with closed-loop intelligence.' }],
+    ['meta', { property: 'og:image', content: 'https://cal.cormorantforaging.dev/logo.svg' }],
+    ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
+    ['meta', { property: 'twitter:url', content: 'https://cal.cormorantforaging.dev/' }],
+    ['meta', { property: 'twitter:title', content: 'CAL - Cascade Analysis Language' }],
+    ['meta', { property: 'twitter:description', content: 'The only language where cascade analysis is syntax, not a library. Find what companies miss with closed-loop intelligence.' }],
+    ['meta', { property: 'twitter:image', content: 'https://cal.cormorantforaging.dev/logo.svg' }],
   ],
 
   themeConfig: {
