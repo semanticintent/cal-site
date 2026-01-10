@@ -367,7 +367,7 @@ function getCategoryLabel(cat: string): string {
 
 <style scoped>
 .playground-container {
-  max-width: 1400px;
+  max-width: 100%;
   margin: 2rem auto;
   padding: 0 1rem;
 }
@@ -536,7 +536,7 @@ function getCategoryLabel(cat: string): string {
 
 .editor-container {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 3fr;
   min-height: 600px;
 }
 
