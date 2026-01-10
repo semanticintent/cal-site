@@ -1,0 +1,6 @@
+name = "cal-site"
+compatibility_date = "2026-01-10"
+main = "index.js"
+
+[site]
+bucket = ".vitepress/dist"
