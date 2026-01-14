@@ -33,6 +33,7 @@ export default defineConfig({
     nav: [
       { text: 'Guide', link: '/guide/introduction' },
       { text: 'Language', link: '/language/syntax' },
+      { text: 'Runtime', link: '/runtime/' },
       { text: 'Frameworks', link: '/frameworks/drift' },
       { text: 'Tools', link: '/tools/cli' },
       { text: 'Playground', link: '/playground' },
@@ -40,7 +41,7 @@ export default defineConfig({
       {
         text: 'Links',
         items: [
-          { text: 'GitHub (Coming Soon)', link: 'https://github.com/semanticintent' },
+          { text: 'GitHub', link: 'https://github.com/semanticintent/cal-runtime' },
           { text: '6D Methodology', link: 'https://6d.cormorantforaging.dev/' },
           { text: 'Cormorant Foraging', link: 'https://cormorantforaging.dev/' },
           { text: 'StratIQX', link: 'https://stratiqx.com/' }
@@ -99,6 +100,38 @@ export default defineConfig({
             { text: 'Parser (cal.js)', link: '/api/parser' },
             { text: 'Executor', link: '/api/executor' },
             { text: 'Adapters', link: '/api/adapters' }
+          ]
+        }
+      ],
+      '/runtime/': [
+        {
+          text: 'Getting Started',
+          items: [
+            { text: 'Overview', link: '/runtime/' },
+            { text: 'Installation', link: '/runtime/installation' },
+            { text: 'Getting Started', link: '/runtime/getting-started' }
+          ]
+        },
+        {
+          text: 'Configuration',
+          items: [
+            { text: 'Configuration', link: '/runtime/configuration' },
+            { text: 'Validation', link: '/runtime/validation' }
+          ]
+        },
+        {
+          text: 'Adapters',
+          items: [
+            { text: 'Data Adapters', link: '/runtime/data-adapters' },
+            { text: 'Alert Adapters', link: '/runtime/alert-adapters' }
+          ]
+        },
+        {
+          text: 'Reference',
+          items: [
+            { text: 'CLI Reference', link: '/runtime/cli-reference' },
+            { text: 'Examples', link: '/runtime/examples' },
+            { text: 'API Reference', link: '/runtime/api-reference' }
           ]
         }
       ]

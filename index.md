@@ -10,11 +10,11 @@ hero:
       text: Get Started
       link: /guide/introduction
     - theme: alt
-      text: Try Playground
-      link: /playground
+      text: Install Runtime
+      link: /runtime/installation
     - theme: alt
-      text: GitHub (Coming Soon)
-      link: https://github.com/semanticintent
+      text: View on GitHub
+      link: https://github.com/semanticintent/cal-runtime
 
 features:
   - icon: 🪶
@@ -81,6 +81,27 @@ Both are true. CAL analyzes cascades using the Cormorant Foraging methodology.
 | Subjective "act now" | Deterministic thresholds |
 | Open loop | **Closed loop** |
 | Consultant delivers report | System delivers decisions |
+
+## Quick Install
+
+Get the TypeScript runtime up and running in seconds:
+
+```bash
+npm install @stratiqx/cal-runtime
+```
+
+Or use the CLI globally:
+
+```bash
+npm install -g @stratiqx/cal-runtime
+cal run analysis.cal --data entities.json
+```
+
+::: tip Production Ready
+The CAL Runtime is a complete TypeScript implementation with 192 passing tests, full type safety, and flexible adapters for data sources and alert channels.
+
+**[View Installation Guide →](/runtime/installation)**
+:::
 
 ---
 
