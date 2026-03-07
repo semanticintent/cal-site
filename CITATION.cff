@@ -1,0 +1,52 @@
+cff-version: 1.2.0
+title: "CAL Language Specification: Cormorant Agentic Language Documentation"
+message: "If you use this specification, please cite it using the metadata from this file."
+type: software
+authors:
+  - family-names: Shatny
+    given-names: Michael
+    orcid: "https://orcid.org/0009-0006-2011-3258"
+repository-code: "https://github.com/semanticintent/cal-site"
+url: "https://cal.cormorantforaging.dev"
+abstract: >-
+  Complete language specification and documentation for CAL (Cormorant Agentic
+  Language), a domain-specific language for cascade analysis and autonomous
+  decision-making. Defines the CAL syntax, keywords (FORAGE, DIVE, DRIFT, FETCH,
+  CHIRP, PERCH, LISTEN, WAKE, TRACE, SURFACE), operators, 6D dimension mapping,
+  and framework integrations. CAL encodes the Cormorant Foraging methodology
+  directly into executable syntax — the first language where cascade analysis
+  is grammar, not a library.
+keywords:
+  - language-specification
+  - cormorant-agentic-language
+  - domain-specific-language
+  - cascade-analysis
+  - cormorant-foraging
+  - 6d-methodology
+  - drift-measurement
+  - fetch-decisions
+  - intelligence-systems
+license: MIT
+version: 1.0.0
+date-released: "2026-03-07"
+references:
+  - type: software
+    title: "CAL Runtime: Cormorant Agentic Language Execution Engine"
+    authors:
+      - family-names: Shatny
+        given-names: Michael
+    url: "https://github.com/semanticintent/cal-runtime"
+  - type: software
+    title: "Cormorant Foraging Framework: A Multi-Layered Architecture for Intelligence Systems"
+    authors:
+      - family-names: Shatny
+        given-names: Michael
+    doi: "10.5281/zenodo.18904952"
+    url: "https://github.com/semanticintent/cormorant-foraging-framework"
+  - type: software
+    title: "6D Foraging Methodology: Strategic Dimensional Discovery"
+    authors:
+      - family-names: Shatny
+        given-names: Michael
+    doi: "10.5281/zenodo.18209946"
+    url: "https://github.com/semanticintent/6d-foraging-methodology"

@@ -1,22 +1,40 @@
-# CAL Documentation Site
+# CAL Language Specification
 
-Official documentation for CAL (Cascade Analysis Language).
+**Cormorant Agentic Language (CAL) — Language Reference and Documentation**
 
-## About
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
-CAL is a domain-specific language for cascade analysis and autonomous decision-making. This documentation site provides comprehensive guides, language reference, framework documentation, and API references.
+Complete specification for CAL, a domain-specific language for cascade analysis and autonomous decision-making built on the Cormorant Foraging methodology.
 
-**Live Site:** `cal.cormorantforaging.dev` (coming soon)
+## What is CAL?
 
-## Project Structure
+CAL is the first language where cascade analysis is syntax, not a library. Every keyword maps directly to the Cormorant Foraging Framework:
+
+```cal
+FORAGE entities WHERE sound > 7
+ACROSS D1, D2, D3, D5, D6
+DEPTH 3
+SURFACE cascade_map
+
+DRIFT cascade_map METHODOLOGY 85 PERFORMANCE 35
+FETCH cascade_map THRESHOLD 1000
+ON EXECUTE CHIRP critical "Act now"
+```
+
+## The CAL Pipeline
 
 ```
-cal-docs/
-├── .vitepress/
-│   ├── config.js           # VitePress configuration
-│   └── theme/
-│       ├── index.js        # Custom theme
-│       └── custom.css      # Cormorant brand colors
+SENSE     →  FORAGE, LISTEN, PERCH, WAKE
+ANALYZE   →  DIVE, TRACE, ACROSS, DEPTH
+MEASURE   →  DRIFT
+DECIDE    →  FETCH
+ACT       →  CHIRP, SURFACE
+```
+
+## Documentation Structure
+
+```
+cal-site/
 ├── guide/                  # Getting Started
 │   ├── introduction.md
 │   ├── installation.md
@@ -32,6 +50,15 @@ cal-docs/
 │   ├── drift.md
 │   ├── fetch.md
 │   └── 6d.md
+├── runtime/                # Runtime Documentation
+│   ├── installation.md
+│   ├── getting-started.md
+│   ├── configuration.md
+│   ├── data-adapters.md
+│   ├── alert-adapters.md
+│   ├── cli-reference.md
+│   ├── api-reference.md
+│   └── examples.md
 ├── tools/                  # Tools
 │   ├── cli.md
 │   ├── repl.md
@@ -40,75 +67,44 @@ cal-docs/
 │   ├── parser.md
 │   ├── executor.md
 │   └── adapters.md
-├── playground.md           # Interactive playground (coming soon)
-├── index.md                # Home page
-└── package.json
+└── playground.md           # Interactive playground
 ```
 
 ## Development
 
-### Install Dependencies
-
 ```bash
 npm install
+npm run docs:dev       # Start dev server at localhost:5173
+npm run docs:build     # Build for production
+npm run docs:preview   # Preview production build
 ```
 
-### Start Dev Server
+## Ecosystem
 
-```bash
-npm run docs:dev
+- [CAL Runtime](https://github.com/semanticintent/cal-runtime) — Execution engine
+- [Cormorant Foraging Framework](https://cormorantforaging.dev) — Foundational methodology
+- [6D Foraging Methodology](https://6d.cormorantforaging.dev) — Dimensional analysis
+- [StratIQX](https://stratiqx.com) — Case studies and analysis platform
+
+## Citation
+
+If you reference the CAL language specification, please cite:
+
+```bibtex
+@misc{shatny2026calspec,
+  author = {Shatny, Michael},
+  title = {CAL Language Specification: Cormorant Agentic Language Documentation},
+  year = {2026},
+  publisher = {Zenodo},
+  url = {https://github.com/semanticintent/cal-site},
+  note = {ORCID: 0009-0006-2011-3258}
+}
 ```
 
-Then open http://localhost:5173
+## Author
 
-### Build for Production
-
-```bash
-npm run docs:build
-```
-
-Output will be in `.vitepress/dist/`
-
-### Preview Production Build
-
-```bash
-npm run docs:preview
-```
-
-## Features
-
-- **Dark Theme** - Default dark mode with Cormorant brand colors
-- **Full-Text Search** - Built-in local search
-- **Responsive** - Mobile-friendly design
-- **Code Highlighting** - Syntax highlighting for CAL and other languages
-- **Navigation** - Organized sidebar navigation
-- **SEO Optimized** - Meta tags and structured data
-
-## Brand Colors
-
-```css
---cal-primary: #4a9eff;      /* Cormorant blue */
---cal-secondary: #64ffda;    /* Accent teal */
---cal-accent: #ffd700;       /* Alert gold */
---cal-dark: #0d1117;         /* Background */
---cal-text: #e6edf3;         /* Primary text */
-```
-
-## Contributing
-
-This documentation is open source. Contributions welcome!
-
-1. Fork the repository
-2. Create a feature branch
-3. Make your changes
-4. Submit a pull request
-
-## Links
-
-- **CAL Language:** [github.com/semanticintent/cal](https://github.com/semanticintent/cal)
-- **6D Methodology:** [6d.cormorantforaging.dev](https://6d.cormorantforaging.dev/)
-- **Cormorant Foraging:** [cormorantforaging.dev](https://cormorantforaging.dev/)
-- **StratIQX:** [stratiqx.com](https://stratiqx.com/)
+**Michael Shatny**
+ORCID: [0009-0006-2011-3258](https://orcid.org/0009-0006-2011-3258)
 
 ## License
 
@@ -116,4 +112,4 @@ MIT
 
 ---
 
-Built with [VitePress](https://vitepress.dev/) and the Cormorant Foraging methodology 🪶
+Built with [VitePress](https://vitepress.dev/) and the Cormorant Foraging methodology.
