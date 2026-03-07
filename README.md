@@ -2,6 +2,7 @@
 
 **Cormorant Agentic Language (CAL) — Language Reference and Documentation**
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.18905197.svg)](https://doi.org/10.5281/zenodo.18905197)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 Complete specification for CAL, a domain-specific language for cascade analysis and autonomous decision-making built on the Cormorant Foraging methodology.
@@ -97,6 +98,7 @@ If you reference the CAL language specification, please cite:
   year = {2026},
   publisher = {Zenodo},
   url = {https://github.com/semanticintent/cal-site},
+  doi = {10.5281/zenodo.18905197},
   note = {ORCID: 0009-0006-2011-3258}
 }
 ```
