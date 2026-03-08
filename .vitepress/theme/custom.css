@@ -172,6 +172,7 @@ div[class*='language-'] {
 
 /* Tables */
 .vp-doc table {
+  display: table;
   border-collapse: collapse;
   margin: 1rem 0;
   width: auto;
