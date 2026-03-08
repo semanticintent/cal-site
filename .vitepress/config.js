@@ -1,6 +1,7 @@
 import { defineConfig } from 'vitepress'
 
 export default defineConfig({
+  appearance: 'dark',
   title: 'CAL - Cascade Analysis Language',
   description: 'Cascade Analysis Language - The closed-loop intelligence language for finding what companies miss',
   titleTemplate: ':title | CAL Documentation',
