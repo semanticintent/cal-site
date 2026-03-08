@@ -174,7 +174,8 @@ div[class*='language-'] {
 .vp-doc table {
   border-collapse: collapse;
   margin: 1rem 0;
-  width: 100%;
+  width: auto;
+  max-width: 100%;
   border: 1px solid var(--vp-c-divider);
   border-radius: 8px;
   overflow: hidden;
