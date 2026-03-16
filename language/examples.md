@@ -168,6 +168,49 @@ ON EXECUTE CHIRP critical "Major org restructure needed"
 -- Fetch score: ~3600 (far exceeds threshold)
 ```
 
+## Prognostic Analysis (Forward-Looking)
+
+Based on UC-062: The Escape Hatch — the first prognostic case. Uses `WATCH` for trigger monitoring and `SURFACE ON` for scheduled review.
+
+```cal
+-- The Escape Hatch: AI severance-to-investment cascade
+-- Forward analysis with checkable predictions
+FORAGE cross_sector_meta_pattern
+WHERE ai_layoff_stock_surge = true
+  AND severance_capital_available = true
+  AND investment_window_open = true
+ACROSS D2, D1, D3, D6, D5, D4
+DEPTH 3
+SURFACE escape_hatch_cascade
+
+DIVE INTO severance_investment_paradox
+WHEN displaced_workers_can_invest_in_displacer = true
+TRACE escape_hatch_cascade
+EMIT paradox_signal
+
+-- Monitor three trigger conditions over time
+WATCH trigger_1 WHEN layoff_announcement_produces_stock_decline
+WATCH trigger_2 WHEN nfp_negative_2_consecutive AND retail_sales_declining
+WATCH trigger_3 WHEN ai_infra_revenue_growth_declining_2q
+
+DRIFT escape_hatch_cascade
+METHODOLOGY 85
+PERFORMANCE 35
+
+FETCH escape_hatch_cascade
+THRESHOLD 1000
+ON EXECUTE CHIRP critical "Forward analysis: window open, 3 triggers monitored"
+
+SURFACE analysis AS json
+SURFACE review ON "2026-04-15"
+```
+
+**Key patterns:**
+- `WATCH` defines conditions to monitor between now and the review date
+- `SURFACE analysis AS json` outputs the analysis immediately
+- `SURFACE review ON "2026-04-15"` schedules the formal reassessment
+- When a WATCH trigger fires, it changes the window status from OPEN toward CLOSED
+
 ## Next Steps
 
 - [Understand DRIFT Framework](/frameworks/drift)
