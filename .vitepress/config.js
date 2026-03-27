@@ -78,6 +78,7 @@ export default defineConfig({
         {
           text: 'Integrated Frameworks',
           items: [
+            { text: 'When to Use 6D', link: '/frameworks/when-to-use-6d' },
             { text: 'DRIFT Measurement', link: '/frameworks/drift' },
             { text: 'Fetch Decisions', link: '/frameworks/fetch' },
             { text: '6D Methodology', link: '/frameworks/6d' }
