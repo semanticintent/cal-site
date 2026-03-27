@@ -75,6 +75,10 @@ CAL is built on the Cormorant Foraging methodology:
 
 The cormorant is the only bird that masters air, land, AND water. CAL masters Signal, Structure, AND Time.
 
+### Lineage
+
+CAL's core pattern — structured input, generated output, auditable artifacts — traces to **.netTiers** (2005–2010), one of the earliest schema-driven code generation frameworks for .NET. The same founding contributor created both. In 2005, the input was a database schema and the output was a typed data access layer. In 2026, the input is a business event and the output is a six-dimensional cascade analysis with scored dimensions, mapped propagation chains, and reproducible source code. The pattern is the same. The domain changed.
+
 ## Next Steps
 
 - [Install CAL](/guide/installation)
