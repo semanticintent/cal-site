@@ -39,6 +39,8 @@ CAL finds the hidden 70-90%.
 │      ↓                                  │
 │  ACT       →  CHIRP, SURFACE            │
 │      ↓                                  │
+│  VALIDATE  →  RECALL                    │
+│      ↓                                  │
 │  └──────────── LOOP ────────────────┘   │
 │                                         │
 └─────────────────────────────────────────┘
@@ -72,6 +74,7 @@ CAL is built on the Cormorant Foraging methodology:
 | Listens (detects) | LISTEN, CHIRP |
 | Dives (retrieves) | DIVE, FETCH |
 | Remembers (patterns) | WAKE |
+| Recalls (validates) | RECALL |
 
 The cormorant is the only bird that masters air, land, AND water. CAL masters Signal, Structure, AND Time.
 
