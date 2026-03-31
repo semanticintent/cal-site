@@ -39,10 +39,12 @@ export default defineConfig({
       { text: 'Tools', link: '/tools/cli' },
       { text: 'Playground', link: '/playground' },
       { text: 'API', link: '/api/parser' },
+      { text: 'EMBER', link: '/ember/' },
       {
         text: 'Links',
         items: [
-          { text: 'GitHub', link: 'https://github.com/semanticintent/cal-runtime' },
+          { text: 'CAL GitHub', link: 'https://github.com/semanticintent/cal-runtime' },
+          { text: 'Phoenix GitHub', link: 'https://github.com/semanticintent/phoenix-runtime' },
           { text: '6D Methodology', link: 'https://6d.cormorantforaging.dev/' },
           { text: 'Cormorant Foraging', link: 'https://cormorantforaging.dev/' },
           { text: 'StratIQX', link: 'https://stratiqx.com/' }
@@ -102,6 +104,17 @@ export default defineConfig({
             { text: 'Parser (cal.js)', link: '/api/parser' },
             { text: 'Executor', link: '/api/executor' },
             { text: 'Adapters', link: '/api/adapters' }
+          ]
+        }
+      ],
+      '/ember/': [
+        {
+          text: 'EMBER',
+          items: [
+            { text: 'Introduction', link: '/ember/' },
+            { text: 'Constructs', link: '/ember/constructs' },
+            { text: 'File Structure', link: '/ember/file-structure' },
+            { text: 'Runtime', link: '/ember/runtime' },
           ]
         }
       ],
