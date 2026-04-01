@@ -109,17 +109,6 @@ export default defineConfig({
           ]
         }
       ],
-      '/ember/': [
-        {
-          text: 'EMBER',
-          items: [
-            { text: 'Introduction', link: '/ember/' },
-            { text: 'Constructs', link: '/ember/constructs' },
-            { text: 'File Structure', link: '/ember/file-structure' },
-            { text: 'Runtime', link: '/ember/runtime' },
-          ]
-        }
-      ],
       '/runtime/': [
         {
           text: 'Getting Started',

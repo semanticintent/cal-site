@@ -1,88 +1,75 @@
-# EMBER — Semantic Intent Language
+# EMBER — Sibling DSL
 
-**EMBER** is the methodology language of Project Phoenix. Every artifact every agent produces is written in `.sil` format.
+CAL and EMBER are sibling languages in the same methodology family. Both instantiate **Methodology-as-Infrastructure** — the principle that analytical frameworks can be encoded as deterministic infrastructure other systems build upon.
 
-It is not a programming language. It does not execute. It is the format in which agents read, write, and communicate the artifacts of a legacy modernization engagement.
-
-The name reflects what the language captures — the business logic that survives the legacy system. The new system rises from it.
+They operate at different layers. They serve different domains.
 
 ---
 
-## Why `.sil`?
+## The Relationship
 
-Every `.sil` file is:
+**CAL is methodology-as-executor.** Write a CAL script and something runs — cascade analysis executes, scores emerge, alerts fire. CAL is computation.
 
-- **Human readable** without a manual — open one and immediately understand it
-- **Agent parseable** without a schema — line-oriented, no grammar required
-- **Git diffable** — plain text, one construct per file, changes are visible
-- **Permanent** — no binary formats, no locked tooling, no dependencies
-
-The artifact trail is not a byproduct of the pipeline. It is the product. When an engagement is complete, the `.sil` files are the evidence that nothing was lost.
-
----
-
-## Core Rules
-
-1. Every `.sil` file begins with a three-line header — no exceptions
-2. One construct per file
-3. Human readable always — no algorithmic notation, no jargon
-4. Indent with two spaces
-5. Comments begin with `#`
-6. Filenames follow the pattern `domain.workflow.sil`
-
----
-
-## File Header
-
-Every `.sil` file — regardless of construct type — opens with:
+**EMBER is methodology-as-memory.** Write an EMBER file and something is recorded — intent is captured, artifacts travel forward, agents and humans read them without a manual. EMBER is representation.
 
 ```
-CONSTRUCT  <type>
-ID         <domain.name>
-VERSION    <integer>
-─────────────────────────────────────────
+CAL     →  methodology becomes computation
+            write it, something executes it, decisions emerge
+
+EMBER   →  methodology becomes representation
+            write it, agents and humans read it,
+            the pipeline carries it forward as permanent state
 ```
 
-The separator line uses Unicode `─` (U+2500). Everything below it is the construct body.
+Neither is more correct. They operate at different layers of the same pattern.
 
 ---
 
-## How the Constructs Chain
+## The Pattern Family
 
-```
-A-00  SIGNAL    →  tells each agent what to look for
-A-01  WORKFLOW  →  server-side trace per business process
-A-02  SCREEN    →  UI trace per workflow
-A-03  SPEC      →  synthesizes WORKFLOW + SCREEN → intent
-A-04            →  reads SPEC + _mission.sil → stack decision
-A-05            →  reads SPEC + SCREEN → builds system
-A-06            →  reads SPEC → certifies system
-      EPISODE   →  any step can write one, all steps read open ones
-```
-
-Each construct type is covered in [Constructs](./constructs).
+| Property | CAL | EMBER |
+|---|---|---|
+| Domain | Cascade analysis | Legacy modernization |
+| Execution | Runs — produces scores and alerts | Represents — carries artifacts forward |
+| Layer | Runtime / executor | Memory / intermediate representation |
+| Pipeline | 6D → Sense → Analyze → Decide → Act | Phoenix → Extract → Synthesize → Build → Certify |
+| Keywords | `FORAGE` `DRIFT` `FETCH` `CHIRP` ... | `SIGNAL` `WORKFLOW` `SCREEN` `SPEC` `EPISODE` |
+| Output | Analysis scores, cascade maps, action alerts | Mission briefs, process traces, specs, certification |
 
 ---
 
-## What EMBER Is Not
+## Side by Side
 
-- **Not a programming language** — nothing in a `.sil` file executes
-- **Not a schema language** — no type enforcement, no validators
-- **Not a documentation format** — a working artifact, not an explanation
-- **Not version-controlled separately** — lives in the same repo as the code
+```
+CAL script                          EMBER spec
 
----
+FORAGE entities WHERE sound > 7     CONSTRUCT  spec
+ACROSS D1, D2, D3, D5, D6          ID         cart.checkout
+DEPTH 3                             VERSION    1
+SURFACE cascade_map                 ─────────────────────────────
+                                    intent:
+DRIFT cascade_map                     Allow a customer to purchase
+  METHODOLOGY 85                      and receive confirmation
+  PERFORMANCE 35
+FETCH cascade_map THRESHOLD 1000    rules:
+ON EXECUTE CHIRP critical "Act now"   - Charge before order created
+                                      - Promo before total
 
-## Reference Implementation
-
-EMBER is implemented in [`@semanticintent/phoenix-runtime`](https://www.npmjs.com/package/@semanticintent/phoenix-runtime) — the CLI that orchestrates the pipeline, parses `.sil` files, and manages artifact state.
-
-```bash
-npm install @semanticintent/phoenix-runtime
+↓ executes → produces scores        ↓ read by agents → informs build
 ```
 
-DOI: [10.5281/zenodo.19360782](https://doi.org/10.5281/zenodo.19360782)
+CAL tells the system what to decide. EMBER tells the system what was meant.
 
 ---
 
-*EMBER v0.1 — Project Phoenix — [10.5281/zenodo.19360727](https://doi.org/10.5281/zenodo.19360727)*
+## Full EMBER Documentation
+
+EMBER is native to Project Phoenix — it is the artifact language of the seven-agent pipeline. The complete specification lives alongside Phoenix:
+
+**[EMBER language specification →](https://phoenix.cormorantforaging.dev/ember/)**
+
+Covers: constructs (`SIGNAL`, `WORKFLOW`, `SCREEN`, `SPEC`, `EPISODE`), file structure, naming conventions, and the `phoenix-runtime` CLI.
+
+---
+
+*EMBER v0.1 — [Project Phoenix](https://phoenix.cormorantforaging.dev) — Part of the [Cormorant Foraging](https://cormorantforaging.dev) methodology family*
