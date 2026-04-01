@@ -9,6 +9,8 @@ export default defineConfig({
   ignoreDeadLinks: [
     // Allow localhost URLs in developer documentation
     /^https?:\/\/localhost/,
+    // Ignore /cal (parsed from @stratiqx/cal-runtime references in code blocks)
+    '/cal',
   ],
 
   head: [

@@ -111,6 +111,29 @@ on: "Place Order →" → SCREEN 3
 - No styling, no colors, no component names — layout only
 - Screens in sequence top to bottom
 
+::: tip SCREEN beyond UI — v0.1 note
+SCREEN is currently defined for user-facing interfaces, but the construct is more general than its current scope suggests.
+
+A screen is something you look through — or something that filters. Both meanings apply.
+
+For background processes and integrations, SCREEN can represent the *perspective layer* — what the process examines, what it passes, what it rejects, what it flags. No UI required:
+
+```
+CONSTRUCT  screen
+ID         order.fraud-check
+VERSION    1
+─────────────────────────────────────────
+type:      background
+examines:  order amount, velocity, location delta
+passes:    orders below risk threshold
+flags:     velocity > 3 orders / hour
+rejects:   known fraud signatures
+output:    risk score → order.checkout workflow
+```
+
+Same construct. Same question answered: *what does this process examine, and what moves forward?* This interpretation is under consideration for a future version of the spec.
+:::
+
 ---
 
 ## SPEC
