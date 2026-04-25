@@ -1,6 +1,6 @@
 # EMBER — Sibling DSL
 
-CAL and EMBER are sibling languages in the same methodology family. Both instantiate **Methodology-as-Infrastructure** — the principle that analytical frameworks can be encoded as deterministic infrastructure other systems build upon.
+CAL and EMBER are sibling languages in the same methodology family. Both instantiate **[Methodology-as-Infrastructure](https://doi.org/10.5281/zenodo.18946631)** — the principle that analytical frameworks can be encoded as deterministic infrastructure other systems build upon.
 
 They operate at different layers. They serve different domains.
 
@@ -71,5 +71,9 @@ EMBER is native to Project Phoenix — it is the artifact language of the seven-
 Covers: constructs (`SIGNAL`, `WORKFLOW`, `SCREEN`, `SPEC`, `EPISODE`), file structure, naming conventions, and the `phoenix-runtime` CLI.
 
 ---
+
+---
+
+**Foundation:** Shatny, M. *Methodology-as-Infrastructure: From Framework to Runtime.* Zenodo, 2026. [doi.org/10.5281/zenodo.18946631](https://doi.org/10.5281/zenodo.18946631)
 
 *EMBER v0.1 — [Project Phoenix](https://phoenix.cormorantforaging.dev) — Part of the [Cormorant Foraging](https://cormorantforaging.dev) methodology family*
