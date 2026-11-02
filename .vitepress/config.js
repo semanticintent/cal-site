@@ -18,15 +18,15 @@ export default defineConfig({
     ['meta', { name: 'title', content: 'CAL - Cascade Analysis Language' }],
     ['meta', { name: 'description', content: 'The only language where cascade analysis is syntax, not a library. Find what companies miss with closed-loop intelligence.' }],
     ['meta', { property: 'og:type', content: 'website' }],
-    ['meta', { property: 'og:url', content: 'https://cal.cormorantforaging.dev/' }],
+    ['meta', { property: 'og:url', content: 'https://cal.semanticintent.dev/' }],
     ['meta', { property: 'og:title', content: 'CAL - Cascade Analysis Language' }],
     ['meta', { property: 'og:description', content: 'The only language where cascade analysis is syntax, not a library. Find what companies miss with closed-loop intelligence.' }],
-    ['meta', { property: 'og:image', content: 'https://cal.cormorantforaging.dev/logo.svg' }],
+    ['meta', { property: 'og:image', content: 'https://cal.semanticintent.dev/logo.svg' }],
     ['meta', { property: 'twitter:card', content: 'summary_large_image' }],
-    ['meta', { property: 'twitter:url', content: 'https://cal.cormorantforaging.dev/' }],
+    ['meta', { property: 'twitter:url', content: 'https://cal.semanticintent.dev/' }],
     ['meta', { property: 'twitter:title', content: 'CAL - Cascade Analysis Language' }],
     ['meta', { property: 'twitter:description', content: 'The only language where cascade analysis is syntax, not a library. Find what companies miss with closed-loop intelligence.' }],
-    ['meta', { property: 'twitter:image', content: 'https://cal.cormorantforaging.dev/logo.svg' }],
+    ['meta', { property: 'twitter:image', content: 'https://cal.semanticintent.dev/logo.svg' }],
   ],
 
   themeConfig: {
@@ -47,8 +47,8 @@ export default defineConfig({
         items: [
           { text: 'CAL GitHub', link: 'https://github.com/semanticintent/cal-runtime' },
           { text: 'Phoenix GitHub', link: 'https://github.com/semanticintent/phoenix-runtime' },
-          { text: '6D Methodology', link: 'https://6d.cormorantforaging.dev/' },
-          { text: 'Cormorant Foraging', link: 'https://cormorantforaging.dev/' },
+          { text: '6D Methodology', link: 'https://6d.semanticintent.dev/' },
+          { text: 'Cormorant Foraging', link: 'https://cormorantforaging.semanticintent.dev/' },
           { text: 'StratIQX', link: 'https://stratiqx.com/' }
         ]
       }
@@ -148,7 +148,7 @@ export default defineConfig({
     ],
 
     footer: {
-      message: 'Part of <a href="https://cormorantforaging.dev" target="_blank">Cormorant Foraging</a> | <a href="https://millpond.ai" target="_blank">MillPond 🐦</a> | <a href="https://stratiqx.com" target="_blank">StratIQX</a> | The closed-loop intelligence language.',
+      message: 'Part of <a href="https://cormorantforaging.semanticintent.dev" target="_blank">Cormorant Foraging</a> | <a href="https://millpond.semanticintent.dev" target="_blank">MillPond 🐦</a> | <a href="https://stratiqx.com" target="_blank">StratIQX</a> | The closed-loop intelligence language.',
       copyright: 'Built on research from <a href="https://semanticintent.dev/papers/semantic-intent-ssot" target="_blank">semanticintent.dev</a> | <a href="/privacy-policy">Privacy</a> • <a href="/terms-of-service">Terms</a> • <a href="/cookie-policy">Cookies</a> • <a href="/disclaimer">Disclaimer</a>'
     },
 
