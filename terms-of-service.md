@@ -146,8 +146,8 @@ semanticintent.dev/papers/semantic-intent-ssot
 ## Part of the Cormorant Family
 
 CAL is part of:
-- [Cormorant Foraging](https://cormorantforaging.dev) - Methodology
-- [MillPond](https://millpond.ai) - AI Infrastructure
+- [Cormorant Foraging](https://cormorantforaging.semanticintent.dev) - Methodology
+- [MillPond](https://millpond.semanticintent.dev) - AI Infrastructure
 - [StratIQX](https://stratiqx.com) - Strategic Intelligence
 
 ---
@@ -158,7 +158,7 @@ Questions about these Terms?
 
 - **GitHub Issues**: [github.com/semanticintent/cal/issues](https://github.com/semanticintent/cal/issues)
 - **Documentation**: [github.com/semanticintent/cal-docs](https://github.com/semanticintent/cal-docs)
-- **Website**: [cormorantforaging.dev](https://cormorantforaging.dev)
+- **Website**: [cormorantforaging.semanticintent.dev](https://cormorantforaging.semanticintent.dev)
 
 ---
 

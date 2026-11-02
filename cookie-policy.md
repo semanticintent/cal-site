@@ -150,10 +150,10 @@ If we start using cookies, we will:
 Questions about cookies or this policy?
 
 - **GitHub**: [github.com/semanticintent/cal](https://github.com/semanticintent/cal)
-- **Website**: [cormorantforaging.dev](https://cormorantforaging.dev)
+- **Website**: [cormorantforaging.semanticintent.dev](https://cormorantforaging.semanticintent.dev)
 
 ---
 
 ## Part of the Cormorant Family
 
-CAL is part of the [Cormorant Foraging](https://cormorantforaging.dev) methodology, powered by [MillPond](https://millpond.ai) and [StratIQX](https://stratiqx.com).
+CAL is part of the [Cormorant Foraging](https://cormorantforaging.semanticintent.dev) methodology, powered by [MillPond](https://millpond.semanticintent.dev) and [StratIQX](https://stratiqx.com).

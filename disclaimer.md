@@ -229,7 +229,7 @@ This disclaimer, together with the [Terms of Service](/terms-of-service) and [Pr
 
 CAL is built on research from:
 - **Semantic Intent**: [semanticintent.dev](https://semanticintent.dev)
-- **Cormorant Foraging**: [cormorantforaging.dev](https://cormorantforaging.dev)
+- **Cormorant Foraging**: [cormorantforaging.semanticintent.dev](https://cormorantforaging.semanticintent.dev)
 
 Academic or commercial use should provide proper attribution.
 
@@ -247,8 +247,8 @@ Questions about this disclaimer?
 ## Part of the Cormorant Family
 
 CAL is part of:
-- [Cormorant Foraging](https://cormorantforaging.dev) - Methodology
-- [MillPond](https://millpond.ai) - AI Infrastructure
+- [Cormorant Foraging](https://cormorantforaging.semanticintent.dev) - Methodology
+- [MillPond](https://millpond.semanticintent.dev) - AI Infrastructure
 - [StratIQX](https://stratiqx.com) - Strategic Intelligence
 
 ---
