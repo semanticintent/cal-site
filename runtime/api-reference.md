@@ -187,6 +187,8 @@ function calculateFetch(
   threshold: number
 ): FetchResult;
 
+// Levels are fractions of the threshold T (must be > 0):
+// EXECUTE >= T, CONFIRM >= 0.75T, QUEUE >= 0.5T, WAIT below 0.5T.
 type FetchLevel = 'EXECUTE' | 'CONFIRM' | 'QUEUE' | 'WAIT';
 
 interface FetchResult {
@@ -194,6 +196,7 @@ interface FetchResult {
   readonly fetchScore: number;
   readonly threshold: number;
   readonly level: FetchLevel;
+  readonly highPriority: boolean;   // fetchScore >= 2 × threshold (since 1.5.0)
   readonly components: {
     readonly chirp: number;
     readonly drift: number;
@@ -268,13 +271,13 @@ function cascadeProbability(score: number): {
   label: string;
 };
 
-// Financial multiplier estimation
+// Deprecated since 1.5.0, removed in 2.0.0: heuristic with no published evidence
 function estimateMultiplier(
   dimensionsAffected: number,
   cascadeDepth: number
 ): MultiplierRange;
 
-// Financial impact calculation
+// Deprecated since 1.5.0, removed in 2.0.0: built on estimateMultiplier
 function calculateFinancialImpact(
   baseCost: number,
   multiplier: MultiplierRange,

@@ -29,14 +29,14 @@ Cascade Map Generated:
 │ Entity: design-system-v2            │
 │ Sound: 8.5 │ Space: wide │ Time: ⚡│
 ├─────────────────────────────────────┤
-│ D1 (Customer)    → 850 impact      │
-│ D2 (Employee)    → 425 impact      │
-│ D3 (Revenue)     → 1275 impact     │
-│ D5 (Quality)     → 637 impact      │
-│ D6 (Operational) → 318 impact      │
+│ D1 (Customer)    → score 70         │
+│ D2 (Employee)    → score 58         │
+│ D3 (Revenue)     → score 86         │
+│ D5 (Quality)     → score 64         │
+│ D6 (Operational) → score 52         │
 └─────────────────────────────────────┘
 
-Total Cascade: 3,505 impact points
+Chirp: 66 (average of scored dimensions)
 Depth: 3 levels analyzed`
   },
   {
@@ -79,28 +79,28 @@ SURFACE cascade_map
 
 DRIFT cascade_map METHODOLOGY 85 PERFORMANCE 30
 
-FETCH cascade_map THRESHOLD 1000
+FETCH cascade_map THRESHOLD 1000 CONFIDENCE 0.8
 ON EXECUTE CHIRP critical "Cascade exceeds threshold"
-ON SKIP CHIRP info "Below action threshold"`,
+ON WAIT CHIRP info "Below action threshold"`,
     output: `✓ FORAGE Complete: 3 entities
 ✓ DRIFT Gap: 55 points (CRITICAL)
 ✓ FETCH Decision: EXECUTE
 
 ━━━ FETCH RESULT ━━━
 
-Total Impact: 3,505 points
-Threshold:    1,000 points
-Decision:     🔴 EXECUTE
-
-Reason: Cascade impact (3,505) exceeds
-        threshold (1,000) by 250%
+Chirp:        72 (average of scored dimensions)
+DRIFT:        55 (85 − 30)
+Confidence:   0.8
+FETCH:        72 × 55 × 0.8 = 3,168
+Threshold:    1,000
+Decision:     🔴 EXECUTE (high priority, ≥ 2 × threshold)
 
 Action Triggered:
 🔊 CHIRP [CRITICAL]: Cascade exceeds threshold
 
 Next Steps:
 → Review high-impact entities
-→ Prioritize D3 (Revenue): 1,275 impact
+→ Prioritize D3 (Revenue): highest dimension score
 → Address execution gap (DRIFT: 55)`
   },
   {
@@ -125,24 +125,25 @@ DRIFT cascade_map
 # 3. Decide action
 FETCH cascade_map
   THRESHOLD 800
+  CONFIDENCE 0.8
 ON EXECUTE {
   CHIRP critical "High-impact cascade detected"
   PERCH cascade_map AS "Q1-priorities"
 }
-ON SKIP {
+ON WAIT {
   CHIRP info "No immediate action needed"
 }`,
     output: `✓ FORAGE Complete
   → 8 entities discovered
   → 5 meet criteria (sound>6, space=wide)
 
-✓ Cascade Analysis
-  → D1 (Customer): 1,240 impact
-  → D2 (Employee): 620 impact
-  → D3 (Revenue): 1,860 impact
-  → D5 (Quality): 930 impact
-  → D6 (Operational): 465 impact
-  → Total: 5,115 points (depth 3)
+✓ Cascade Analysis (dimension scores, 0-100)
+  → D1 (Customer): 72
+  → D2 (Employee): 58
+  → D3 (Revenue): 84
+  → D5 (Quality): 66
+  → D6 (Operational): 50
+  → Chirp: 66 (average of scored dimensions)
 
 ✓ DRIFT Measurement
   → Methodology: 90/100 (you know what to do)
@@ -150,9 +151,9 @@ ON SKIP {
   → Gap: 50 points (55.6% below target)
   → Status: 🔴 CRITICAL EXECUTION GAP
 
-✓ FETCH Decision: EXECUTE
-  → Impact (5,115) > Threshold (800)
-  → Exceeds by 539%
+✓ FETCH Decision: EXECUTE (high priority)
+  → FETCH = 66 × 50 × 0.8 = 2,640
+  → Threshold 800; 2,640 ≥ 2 × 800
 
 🔊 CHIRP [CRITICAL]: High-impact cascade detected
 
@@ -164,76 +165,41 @@ ON SKIP {
 Sense → Analyze → Measure → Decide → Act ✓`
   },
   {
-    id: 'tailwind-case',
-    title: 'Tailwind CSS Case Study',
-    description: 'Real-world example from UC-002',
+    id: 'uc-342-case',
+    title: 'Real Case: UC-342',
+    description: 'Published inputs from UC-342, Now the Work Begins',
     category: 'case-study',
-    code: `# Tailwind CSS Adoption Analysis
-# Based on UC-002 case study
+    code: `# UC-342: Now the Work Begins (uc-342.stratiqx.com)
+# Inputs as published on the case page
 
-FORAGE "tailwind-css-adoption"
-WHERE sound == 8 AND space == "wide"
-ACROSS D1, D2, D3, D5, D6
-DEPTH 3
+DRIFT now_the_work_begins
+  METHODOLOGY 88
+  PERFORMANCE 42
 
-DRIFT tailwind_impact
-  METHODOLOGY 75    # Docs said "use utility-first"
-  PERFORMANCE 15    # Actual adoption was slow
-
-FETCH tailwind_impact
-  THRESHOLD 500
+FETCH now_the_work_begins
+  THRESHOLD 1000
+  CONFIDENCE 0.78
 ON EXECUTE
-  CHIRP critical "Hidden costs detected"`,
-    output: `✓ Entity: tailwind-css-adoption
-  Sound: 8 (high signal)
-  Space: wide (org-wide impact)
-  Time: immediate
+  SURFACE case_page`,
+    output: `━━━ 6D SCORES ━━━
+D1 Customer     70
+D2 Employee     88
+D3 Revenue      not scored
+D4 Regulatory   74
+D5 Quality      82   ← origin
+D6 Operational  76
 
-━━━ CASCADE ANALYSIS ━━━
+Cascade: D5 > D2+D6 > D4+D1
+Chirp:   (70 + 88 + 74 + 82 + 76) / 5 = 78
 
-Direct Cost:    $50,000 (visible)
-Cascade Impact: $500,000 (hidden)
-Multiplier:     10x
+━━━ DRIFT ━━━
+Methodology 88 − Performance 42 = 46
 
-Dimension Breakdown:
-┌────────────────────────────────────┐
-│ D1: Customer Experience            │
-│   → Faster page loads              │
-│   → Consistent UI                  │
-│   Impact: $100,000                 │
-├────────────────────────────────────┤
-│ D2: Developer Productivity         │
-│   → Less custom CSS                │
-│   → Reusable components            │
-│   Impact: $150,000                 │
-├────────────────────────────────────┤
-│ D3: Revenue Growth                 │
-│   → Ship features faster           │
-│   → Competitive advantage          │
-│   Impact: $200,000                 │
-├────────────────────────────────────┤
-│ D5: Code Quality                   │
-│   → Standardized patterns          │
-│   → Reduced tech debt              │
-│   Impact: $30,000                  │
-├────────────────────────────────────┤
-│ D6: Operations                     │
-│   → Smaller bundles                │
-│   → Better caching                 │
-│   Impact: $20,000                  │
-└────────────────────────────────────┘
+━━━ FETCH ━━━
+78 × 46 × 0.78 = 2,799
+Threshold 1,000 → EXECUTE (high priority, ≥ 2,000)
 
-✓ DRIFT Gap: 60 points
-  Companies saw Tailwind as "just CSS"
-  Missed the 10x multiplier effect
-
-✓ FETCH: EXECUTE
-  Impact ($500k) >> Threshold ($500)
-
-🔊 Hidden costs detected:
-   $450,000 missed in initial analysis
-
-Lesson: Methodology > Surface ROI`
+Verdict on the case page is the analyst's own reading.`
   }
 ]
 

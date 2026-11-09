@@ -1,7 +1,7 @@
 # Introduction to CAL
 
-::: tip Documentation Preview
-This is the complete documentation for CAL. The language is currently in testing before public release. Repository coming soon at [github.com/semanticintent](https://github.com/semanticintent).
+::: tip Published
+The runtime is on npm as [`@stratiqx/cal-runtime`](https://www.npmjs.com/package/@stratiqx/cal-runtime), the source is at [github.com/semanticintent/cal-runtime](https://github.com/semanticintent/cal-runtime), and this specification is citable at [10.5281/zenodo.18905196](https://doi.org/10.5281/zenodo.18905196).
 :::
 
 ## What is CAL?
@@ -10,17 +10,7 @@ CAL (Cascade Analysis Language) is a domain-specific programming language design
 
 ### The Problem CAL Solves
 
-When something goes wrong in an organization, the visible cost is rarely the full cost:
-
-```
-Visible Cost: $100K (what you see)
-        ↓
-    [CASCADE]
-        ↓
-Actual Cost: $700K - $1.1M (what you miss)
-```
-
-CAL finds the hidden 70-90%.
+When something happens to an organization, its effects rarely stay in one place. A layoff reaches quality, quality reaches customers, customers reach revenue. CAL records how an event moves across six dimensions, scores each one from the evidence, and turns those scores into a decision anyone can recompute.
 
 ### How It Works
 

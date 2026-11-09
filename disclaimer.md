@@ -43,7 +43,6 @@ While CAL provides decision-support, it does **not replace professional manageme
 CAL cascade calculations are **estimates** based on:
 - 3D signal scoring (Sound × Space × Time)
 - 6D dimension mapping
-- Cascade multiplier tables
 - DRIFT and Fetch frameworks
 
 **Actual impacts may vary significantly** based on:
@@ -91,7 +90,7 @@ To the fullest extent permitted by law, **we disclaim all liability** for:
 CAL has inherent limitations:
 
 1. **Simplification**: Real-world complexity cannot be fully captured in a model
-2. **Estimation**: Multipliers are based on research but may not fit all scenarios
+2. **Judgment**: Dimension scores and Confidence are the analyst's ratings of the evidence
 3. **Context-Dependent**: Results depend on accurate signal scoring
 4. **Human Judgment Required**: CAL is a tool, not a replacement for expertise
 
@@ -108,7 +107,7 @@ The 6D Framework (Customer, Employee, Revenue, Regulatory, Quality, Operational)
 
 ### Example Accuracy
 
-Case studies (e.g., UC-002: Tailwind CSS) are:
+Case studies (e.g., UC-342: Now the Work Begins) are:
 - Based on publicly available information
 - Retrospective analysis with limitations
 - Illustrative examples, not guarantees

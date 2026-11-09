@@ -221,7 +221,7 @@ DRIFT measures gaps between expected (methodology) and actual (performance) stat
 
 **File:** `examples/tailwind-cascade.cal`
 
-Real-world cascade analysis based on the Tailwind CSS case study.
+An illustrative cascade analysis with sample data. The entity and its scores are examples, not taken from a published case.
 
 ### Script
 
@@ -288,7 +288,6 @@ The analysis reveals:
 - **3 entities** with high urgency (sound > 7)
 - **Multiple dimensions affected** across each entity
 - **Cascade pathways** showing how impacts spread
-- **Financial multipliers** based on dimensions × depth
 - **Watchers** set up for ongoing monitoring
 
 ### Key Takeaway
@@ -408,10 +407,10 @@ Fetch = Chirp × |DRIFT| × Confidence
 ```
 
 Decision levels:
-- **EXECUTE** (>1000): Immediate action
-- **CONFIRM** (>500): Review needed
-- **QUEUE** (>100): Schedule later
-- **WAIT** (≤100): Continue monitoring
+- **EXECUTE** (≥ 1,000, the threshold; high priority from 2,000): Immediate action
+- **CONFIRM** (≥ 750, 0.75 × threshold): Review needed
+- **QUEUE** (≥ 500, 0.5 × threshold): Schedule later
+- **WAIT** (below 500): Continue monitoring
 
 #### Layer 5: ACT
 Execute the decided action.

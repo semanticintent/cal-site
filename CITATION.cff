@@ -7,8 +7,8 @@ authors:
     given-names: Michael
     orcid: "https://orcid.org/0009-0006-2011-3258"
 repository-code: "https://github.com/semanticintent/cal-site"
-url: "https://cal.cormorantforaging.dev"
-doi: "10.5281/zenodo.18905197"
+url: "https://cal.semanticintent.dev"
+doi: "10.5281/zenodo.18905196"
 abstract: >-
   Complete language specification and documentation for CAL (Cormorant Agentic
   Language), a domain-specific language for cascade analysis and autonomous
@@ -28,14 +28,15 @@ keywords:
   - fetch-decisions
   - intelligence-systems
 license: MIT
-version: 1.0.0
-date-released: "2026-03-07"
+version: 1.2.0
+date-released: "2026-11-09"
 references:
   - type: software
     title: "CAL Runtime: Cormorant Agentic Language Execution Engine"
     authors:
       - family-names: Shatny
         given-names: Michael
+    doi: "10.5281/zenodo.18905192"
     url: "https://github.com/semanticintent/cal-runtime"
   - type: software
     title: "Cormorant Foraging Framework: A Multi-Layered Architecture for Intelligence Systems"
@@ -49,5 +50,5 @@ references:
     authors:
       - family-names: Shatny
         given-names: Michael
-    doi: "10.5281/zenodo.18209946"
+    doi: "10.5281/zenodo.18209945"
     url: "https://github.com/semanticintent/6d-foraging-methodology"

@@ -52,7 +52,6 @@ node run.js my-analysis.cal --data data.json
    Count: 1
    Dimensions Affected: 3
    Average Score: 42.7
-   Impact Range: $200,000 - $300,000
 ```
 
 ### Step 5: Add DRIFT and FETCH

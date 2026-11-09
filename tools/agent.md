@@ -85,9 +85,7 @@ ON EXECUTE CHIRP critical "Immediate action required"
   "cascade_analysis": {
     "count": 1,
     "dimensionsAffected": 3,
-    "averageScore": 50.4,
-    "multiplier": "4-6×",
-    "impactRange": "$600K - $900K"
+    "averageScore": 50.4
   },
   "drift": {
     "score": 35,
@@ -104,13 +102,13 @@ ON EXECUTE CHIRP critical "Immediate action required"
 ### Stage 4: Narrative
 ```markdown
 ## Executive Summary
-The product launch delay shows a 4-6× cascade multiplier across
-Employee, Quality, and Operational dimensions.
+The product launch delay cascades across the Employee, Quality, and
+Operational dimensions.
 
 ## Key Finding
-- Direct Cost: $150,000
-- Cascade Impact: $600K - $900K
-- Hidden Cost: 4-6× the visible cost
+- Dimensions affected: 3 (Employee, Quality, Operational)
+- DRIFT: 35 (a teaching gap)
+- FETCH: 2,520 → EXECUTE (high priority, ≥ 2 × threshold)
 
 ## Cascade Analysis
 D2 (Employee): Knowledge loss from 3 senior engineers

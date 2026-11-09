@@ -86,21 +86,9 @@ CAL maps impact across:
 
 ---
 
-## Cascade Multiplier
+## Cascade Multiplier (deprecated)
 
-CAL calculates how problems multiply:
-
-| Dimensions × Depth | Multiplier |
-|--------------------|------------|
-| ≥ 15 | 10-15× (Extreme) |
-| ≥ 10 | 6-10× (Severe) |
-| ≥ 6 | 4-6× (Significant) |
-| ≥ 3 | 2-4× (Moderate) |
-| < 3 | 1.5-2× (Limited) |
-
-**Example:** 5 dimensions affected, depth 3 = 15 → 10-15× multiplier
-
-If direct cost is $100K, cascade impact is $1M - $1.5M.
+Earlier versions estimated a cost multiplier from dimensions × depth. That estimate had no published evidence behind it and is **deprecated** as of runtime 1.5.0 (to be removed in 2.0.0). The 6D methodology reports the number of dimensions hit and the cascade depth directly instead.
 
 ---
 

@@ -58,7 +58,7 @@ ON EXECUTE CHIRP critical "Act now"
 
 CAL (Cascade Analysis Language) is a domain-specific language for:
 
-- **Finding hidden costs** — The 70-90% of impact companies miss
+- **Scoring cascades** — Six dimensions scored 0-100, averaged into Chirp
 - **Mapping cascades** — How problems flow across dimensions
 - **Measuring gaps** — DRIFT quantifies what's missing
 - **Deciding action** — Fetch determines when to act

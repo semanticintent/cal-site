@@ -43,7 +43,6 @@ node run.js analysis.cal --data entities.json
    Count: 3
    Dimensions Affected: 5
    Average Score: 48.3
-   Impact Range: $1.2M - $1.8M
 ```
 
 ### Full Output with Verbose

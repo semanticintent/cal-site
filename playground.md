@@ -49,8 +49,8 @@ All examples demonstrate real CAL syntax patterns:
 ### What You're Seeing:
 
 1. **CAL Code** - Real language syntax with keywords, operators, and structure
-2. **Example Output** - Formatted results showing cascade impacts, DRIFT measurements, and FETCH decisions
-3. **Case Studies** - Real-world examples like the Tailwind CSS analysis from UC-002
+2. **Example Output** - Formatted results showing dimension scores, DRIFT measurements, and FETCH decisions
+3. **Case Studies** - A real case, UC-342, with its published inputs
 
 ### Key Features Demonstrated:
 
@@ -96,7 +96,7 @@ Want to try CAL with real execution now?
 - `DEPTH` - How many cascade levels to analyze
 - `SURFACE` - Name the output
 - `THRESHOLD` - Decision point for FETCH
-- `ON EXECUTE` / `ON SKIP` - Conditional actions
+- `ON EXECUTE` / `ON CONFIRM` / `ON QUEUE` / `ON WAIT` - Conditional actions by FETCH level
 
 ### Dimensions
 

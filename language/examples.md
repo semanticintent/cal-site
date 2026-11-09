@@ -154,8 +154,7 @@ ACROSS D1, D2, D3, D5, D6
 DEPTH 2
 SURFACE tailwind_cascade
 
--- Direct impact: $300K visible
--- Expected cascade: $2.1M - $3.4M (7-11× multiplier)
+-- Dimensions affected: 5, cascade depth: 2
 
 DRIFT tailwind_cascade
 METHODOLOGY 85

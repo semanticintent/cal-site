@@ -100,7 +100,6 @@ cal> SURFACE cascade_map
    Count: 2
    Dimensions: D1, D2, D3, D5, D6
    Average Score: 52.8
-   Multiplier: 6-10× (severe)
 
 cal> DRIFT cascade_map METHODOLOGY 85 PERFORMANCE 35
 
