@@ -20,6 +20,8 @@
 | `AND` | Both true | `WHERE sound > 7 AND space > 5` |
 | `OR` | Either true | `WHERE risk > 8 OR priority = 1` |
 
+**Precedence:** `AND` binds tighter than `OR`, so `a AND b OR c` means `(a AND b) OR c`. Parentheses are not supported yet; write conditions in the order that gives the grouping you want. (`OR` is evaluated correctly from runtime 1.6.1; earlier runtimes treated every condition as `AND`.)
+
 ## Combining Conditions
 
 ```cal
@@ -29,6 +31,8 @@ AND impact = "high"
 AND segment = "enterprise"
 OR priority = 1
 ```
+
+This reads as `(sound > 7 AND impact = "high" AND segment = "enterprise") OR priority = 1`.
 
 ## Examples
 
@@ -53,10 +57,12 @@ SURFACE high_urgency
 ### Complex Logic
 ```cal
 FORAGE situations
-WHERE (sound > 8 AND segment = "enterprise")
-OR (priority = 1 AND status = "active")
+WHERE sound > 8 AND segment = "enterprise"
+OR priority = 1 AND status = "active"
 SURFACE critical_cases
 ```
+
+Because `AND` binds tighter than `OR`, this means `(sound > 8 AND segment = "enterprise") OR (priority = 1 AND status = "active")`.
 
 ### String Matching
 ```cal

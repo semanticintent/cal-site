@@ -1,6 +1,6 @@
 {
   "name": "cal-docs",
-  "version": "1.2.1",
+  "version": "1.2.2",
   "description": "Documentation site for CAL (Cascade Analysis Language)",
   "type": "module",
   "scripts": {
