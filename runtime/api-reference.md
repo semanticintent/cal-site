@@ -264,7 +264,7 @@ console.log('Financial impact:', analysis.summary.estimatedImpact);
 #### Other Analyzer Functions
 
 ```typescript
-// Cascade probability assessment
+// Cascade level of a 3D Lens score. `probability` is deprecated since 1.6.0 (assumed, not measured)
 function cascadeProbability(score: number): {
   level: 'critical' | 'high' | 'medium' | 'low' | 'minimal';
   probability: number;
@@ -823,7 +823,7 @@ interface DimensionAnalysis {
   score: number;
   cascade: {
     level: 'minimal' | 'low' | 'medium' | 'high' | 'critical';
-    probability: number;
+    probability: number;   // deprecated since 1.6.0, removed in 2.0.0
     label: string;
   };
   affected: boolean;

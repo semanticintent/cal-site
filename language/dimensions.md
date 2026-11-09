@@ -121,15 +121,17 @@ Dimension Score = (Sound × Space × Time) / 10
 - D2 (Employee): Sound=9, Space=7, Time=8
 - Score = (9 × 7 × 8) / 10 = 50.4
 
-## Cascade Probability
+## Cascade Level
 
-| Score | Level | Probability |
-|-------|-------|-------------|
-| ≥ 70 | Critical | 90% |
-| ≥ 50 | High | 70% |
-| ≥ 30 | Medium | 50% |
-| ≥ 15 | Low | 30% |
-| < 15 | Minimal | 10% |
+| Score | Level |
+|-------|-------|
+| ≥ 70 | Critical |
+| ≥ 50 | High |
+| ≥ 30 | Medium |
+| ≥ 15 | Low |
+| < 15 | Minimal |
+
+The level labels describe how strong a dimension's 3D Lens score is. Earlier versions also attached a probability to each level (90% down to 10%); those numbers were assumptions, not measured, and are deprecated from runtime 1.6.0 (removal in 2.0.0). For how cascades actually move between dimensions, see the counted patterns from the published cases in the [6D methodology](https://6d.semanticintent.dev).
 
 ## Next Steps
 
