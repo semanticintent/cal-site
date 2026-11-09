@@ -28,7 +28,7 @@ keywords:
   - fetch-decisions
   - intelligence-systems
 license: MIT
-version: 1.2.0
+version: 1.2.1
 date-released: "2026-11-09"
 references:
   - type: software
