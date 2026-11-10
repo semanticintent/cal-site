@@ -74,6 +74,7 @@ export default defineConfig({
             { text: 'Keywords', link: '/language/keywords' },
             { text: 'Operators', link: '/language/operators' },
             { text: 'Dimensions', link: '/language/dimensions' },
+            { text: 'Benchmarks', link: '/language/benchmarks' },
             { text: 'Examples', link: '/language/examples' }
           ]
         }
